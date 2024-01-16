@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+header,
+main {
+    width: 81.25%;
+    margin: 0 auto 6.25rem;
+}
+
+.orange-me {
+    color: #FF5400;
+}
+
+.description {
+    color: #131318b3;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 3.25rem;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    padding: 0 2.125rem;
+    cursor: pointer;
+}
+
+/* ---header--- */
+
+header {
+    margin-top: 3.25rem;
+}
+
+/* nav bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 49px;
+}
+
+.nav-title-container {
+    display: flex;
+}
+
+.nav-logo {
+    margin-right: 1rem;
+}
+
+.nav-title {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.75rem;
+}
+
+nav ul li {
+    list-style: none;
+
+    color: var(--Dark-02, #424247);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+nav .list-home {
+    font-weight: 700;
+}
+
+/* banner */
+
+.banner {
+    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 16px;
+}
+
+.banner-overlay {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    border-radius: 16px;
+
+    padding: 6.625rem 0;
+}
+
+.banner-title-container {
+    width: 57.77%;
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto 3rem;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 800;
+
+    margin-bottom: 1.5rem;
+}
+
+.banner-description {
+    color: #FFF;
+}
+
+.banner-find {
+    width: 68.376%;
+    display: flex;
+    padding: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
+
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 auto;
+}
+
+select,
+.where-go {
+    font-size: 1rem;
+    width: 21.75%;
+    height: 3.25rem;
+    text-indent: 1.25rem;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+
+select {
+    color: rgba(19, 19, 24, 0.62);
+    font-weight: 500;
+}
+
+.banner-button {
+    width: 21.75%;
+}
+
+.banner-button img {
+    margin-right: 0.5rem;
+}
+
+/* ---main sections--- */
+
+.section-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* popular section */
+
+.popular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.3125rem;
+}
+
+.popular-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.popular-button {
+    width: max-content;
+}
+
+.popular-img {
+    display: flex;
+    height: 100%;
+}
+
+.popular-img img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* destination section */
+
+.destination {
+    margin: 6.25rem 0;
+}
+
+.destination-text-container,
+.choose-text-container {
+    width: 54.96%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-title {
+    margin-bottom: 1.5rem;
+}
+
+.destination-img-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 300px 286px 300px;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.destination-img-container>div {
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.item1 {
+    grid-column: 1/ span 5;
+    grid-row: 1;
+    background-image: url(../Images/Rectangle\ 5.png);
+}
+
+.item2 {
+    grid-column: 6/ span 5;
+    grid-row: 1;
+    background-image: url(../Images/Rectangle\ 8.png);
+}
+
+.item3 {
+    grid-column: 1/ span 3;
+    grid-row: 2;
+    background-image: url(../Images/Rectangle\ 6.png);
+}
+
+.item4 {
+    grid-column: 4/ span 5;
+    grid-row: 2;
+    background-image: url(../Images/Rectangle\ 7.png);
+}
+
+.item5 {
+    grid-column: 9/ span 2;
+    grid-row: 2;
+    background-image: url(../Images/Rectangle\ 9.png);
+}
+
+.item6 {
+    grid-column: 1/ span 4;
+    grid-row: 3;
+    background-image: url(../Images/Rectangle\ 11.png);
+}
+
+.item7 {
+    grid-column: 5/ span 6;
+    grid-row: 3;
+    background-image: url(../Images/Rectangle\ 10.png);
+}
+
+/* choose section */
+
+.choose-description {
+    margin: 1.5rem 0 3rem;
+}
+
+.choose-reason {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+.reason1 {
+    grid-column: 1/ span 4;
+    grid-row: 1;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.reason2 {
+    grid-column: 5/ span 4;
+    grid-row: 1;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.reason3 {
+    grid-column: 3/ span 4;
+    grid-row: 2;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.reason1,
+.reason2,
+.reason3 {
+    padding: 2rem;
+}
+
+.reason-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 2rem 0 1rem;
+}
+
+/* analytic section */
+
+.analytic {
+    text-align: center;
+    margin: 6.25rem 0;
+}
+
+.analytic-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+
+    margin-top: 3rem;
+    padding: 3rem 0;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px #9d9d9f;
+}
+
+.analytic-number {
+    font-size: 5rem;
+    color: #FF5400;
+}
+
+/* newsletter section */
+
+.newsletter {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 40% calc(60% - 1.5rem);
+}
+
+.newsletter-container {
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.newsletter-description {
+    margin: 1rem 0 1.5rem;
+}
+
+hr {
+    border: 1px solid rgba(19, 19, 24, 0.10);
+}
+
+.newsletter-container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.newsletter-container input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 1rem 0 1rem 1.25rem;
+    border: none;
+    margin-bottom: 1.25rem;
+}
+
+.save-up {
+    display: flex;
+    align-items: end;
+    justify-content: right;
+
+    background-image: url(../Images/Rectangle\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.travel-com {
+    margin-bottom: 2.25rem;
+
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+    width: max-content;
+    padding: 1rem 1.5rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.travel-com .save {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* ---footer--- */
+
+footer {
+    padding: 6.875rem 0 6.875rem;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-container {
+    width: 60.55%;
+    margin: 0 auto;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.footer-logo-name, .footer-social-media  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    color: var(--Dark-01, #131318);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-description{
+    margin: 1rem 0 2rem;
+}
+
+.footer-social-media{
+    gap: 1.5rem;
+}
+
+.footer-social-media img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.footer-hr{
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    margin: 3.125rem 0;
+}
