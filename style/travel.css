@@ -633,4 +633,8 @@ footer {
     .travel-com .save {
         font-size: 1rem;
     }
+    
+    footer {
+        padding: 2.4rem 0;
+    }
 }
