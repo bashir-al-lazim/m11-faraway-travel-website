@@ -484,10 +484,6 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-    html {
-        font-size: 13px;
-    }
-
     header,
     main {
         margin: 0 auto 2.5rem;
