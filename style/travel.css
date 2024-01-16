@@ -32,7 +32,7 @@ button {
     font-size: 1rem;
     font-weight: 700;
     height: 3.25rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: #FF5400;
     border: none;
     padding: 0 2.125rem;
@@ -51,12 +51,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
-    margin-bottom: 49px;
+    margin-bottom: 3.06rem;
 }
 
 .nav-title-container {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -86,6 +89,10 @@ nav .list-home {
     font-weight: 700;
 }
 
+nav .menu-icon {
+    display: none;
+}
+
 /* banner */
 
 .banner {
@@ -93,12 +100,12 @@ nav .list-home {
     background-repeat: no-repeat;
     background-size: cover;
 
-    border-radius: 16px;
+    border-radius: 1.5rem;
 }
 
 .banner-overlay {
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
-    border-radius: 16px;
+    border-radius: 1.5rem;
 
     padding: 6.625rem 0;
 }
@@ -128,7 +135,7 @@ nav .list-home {
     gap: 1.5rem;
     justify-content: center;
 
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.30);
     margin: 0 auto;
 }
@@ -139,7 +146,7 @@ select,
     width: 21.75%;
     height: 3.25rem;
     text-indent: 1.25rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: #FFF;
     border: none;
 }
@@ -195,7 +202,7 @@ select {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 1.5rem;
 }
 
 /* destination section */
@@ -224,7 +231,7 @@ select {
 }
 
 .destination-img-container>div {
-    border-radius: 16px;
+    border-radius: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,43 +242,43 @@ select {
     font-weight: 800;
 }
 
-.item1 {
+.destination1 {
     grid-column: 1/ span 5;
     grid-row: 1;
     background-image: url(../Images/Rectangle\ 5.png);
 }
 
-.item2 {
+.destination2 {
     grid-column: 6/ span 5;
     grid-row: 1;
     background-image: url(../Images/Rectangle\ 8.png);
 }
 
-.item3 {
+.destination3 {
     grid-column: 1/ span 3;
     grid-row: 2;
     background-image: url(../Images/Rectangle\ 6.png);
 }
 
-.item4 {
+.destination4 {
     grid-column: 4/ span 5;
     grid-row: 2;
     background-image: url(../Images/Rectangle\ 7.png);
 }
 
-.item5 {
+.destination5 {
     grid-column: 9/ span 2;
     grid-row: 2;
     background-image: url(../Images/Rectangle\ 9.png);
 }
 
-.item6 {
+.destination6 {
     grid-column: 1/ span 4;
     grid-row: 3;
     background-image: url(../Images/Rectangle\ 11.png);
 }
 
-.item7 {
+.destination7 {
     grid-column: 5/ span 6;
     grid-row: 3;
     background-image: url(../Images/Rectangle\ 10.png);
@@ -293,7 +300,7 @@ select {
 .reason1 {
     grid-column: 1/ span 4;
     grid-row: 1;
-    border-radius: 16px;
+    border-radius: 1.5rem;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
 }
@@ -301,7 +308,7 @@ select {
 .reason2 {
     grid-column: 5/ span 4;
     grid-row: 1;
-    border-radius: 16px;
+    border-radius: 1.5rem;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
@@ -309,7 +316,7 @@ select {
 .reason3 {
     grid-column: 3/ span 4;
     grid-row: 2;
-    border-radius: 16px;
+    border-radius: 1.5rem;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
@@ -342,8 +349,10 @@ select {
 
     margin-top: 3rem;
     padding: 3rem 0;
-    border-radius: 16px;
+    border-radius: 1.5rem;
     box-shadow: 0 25px 50px #9d9d9f;
+    border-left: 4px solid #FF5400;
+    border-right: 4px solid #FF5400;
 }
 
 .analytic-number {
@@ -361,7 +370,7 @@ select {
 
 .newsletter-container {
     padding: 2.5rem;
-    border-radius: 16px;
+    border-radius: 1.5rem;
     border: 1px solid #FF5400;
 }
 
@@ -386,11 +395,12 @@ hr {
 }
 
 .newsletter-container input {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: rgba(19, 19, 24, 0.05);
     padding: 1rem 0 1rem 1.25rem;
     border: none;
     margin-bottom: 1.25rem;
+    font-size: 1rem;
 }
 
 .save-up {
@@ -401,13 +411,13 @@ hr {
     background-image: url(../Images/Rectangle\ 8\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 16px;
+    border-radius: 1.5rem;
 }
 
 .travel-com {
     margin-bottom: 2.25rem;
 
-    border-radius: 16px;
+    border-radius: 1.5rem;
     background: #FF5400;
     transform: rotate(-19.628deg);
     width: max-content;
@@ -434,16 +444,14 @@ footer {
     width: 60.55%;
     margin: 0 auto;
     text-align: center;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center;
-    align-items: center; */
 }
 
-.footer-logo-name, .footer-social-media  {
+.footer-logo-name,
+.footer-social-media {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-title {
@@ -452,20 +460,177 @@ footer {
     font-weight: 800;
 }
 
-.footer-description{
+.footer-description {
     margin: 1rem 0 2rem;
 }
 
-.footer-social-media{
+.footer-social-media {
     gap: 1.5rem;
 }
 
-.footer-social-media img{
+.footer-social-media img {
     height: 2rem;
     width: 2rem;
 }
 
-.footer-hr{
+.footer-hr {
     border: 1px solid rgba(19, 19, 24, 0.10);
     margin: 3.125rem 0;
+}
+
+/* ---responsive css--- */
+
+/* small device 600px */
+
+@media screen and (max-width: 600px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    header,
+    main {
+        margin: 0 auto 2.5rem;
+    }
+
+    header {
+        margin-top: 1.2rem;
+    }
+
+    nav {
+        margin-bottom: 2.06rem;
+    }
+
+    .destination {
+        margin: 2.5rem 0;
+    }
+
+    .analytic {
+        margin: 2.5rem 0 3.5rem;
+    }
+
+    nav .menu-icon {
+        display: block;
+        height: 20px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+    }
+
+    .banner-find {
+        flex-direction: column;
+    }
+
+    select,
+    .where-go,
+    .banner-button {
+        width: 100%;
+    }
+
+    .popular {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-text-container,
+    .choose-text-container {
+        width: 95%;
+    }
+
+    .destination-img-container {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(7, 250px);
+    }
+
+    .destination1 {
+        grid-column: 1/ span 1;
+        grid-row: 1/ span 1;
+    }
+
+    .destination2 {
+        grid-column: 1/ span 1;
+        grid-row: 2/ span 1;
+    }
+
+    .destination3 {
+        grid-column: 1/ span 1;
+        grid-row: 3/ span 1;
+    }
+
+    .destination4 {
+        grid-column: 1/ span 1;
+        grid-row: 4/ span 1;
+    }
+
+    .destination5 {
+        grid-column: 1/ span 1;
+        grid-row: 5/ span 1;
+    }
+
+    .destination6 {
+        grid-column: 1/ span 1;
+        grid-row: 6/ span 1;
+    }
+
+    .destination7 {
+        grid-column: 1/ span 1;
+        grid-row: 7/ span 1;
+    }
+
+    .choose-reason {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .reason1 {
+        grid-column: 1/ span 1;
+        grid-row: 1;
+    }
+
+    .reason2 {
+        grid-column: 1/ span 1;
+        grid-row: 2;
+    }
+
+    .reason3 {
+        grid-column: 1/ span 1;
+        grid-row: 3;
+    }
+
+    .analytic-container {
+        flex-direction: column;
+        box-shadow: 0 10px 20px #9d9d9f;
+    }
+
+    .analytic-number {
+        font-size: 3rem;
+    }
+
+    .newsletter {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 250px;
+    }
+
+    .newsletter-container {
+        padding: 1.5rem;
+    }
+
+    .newsletter-container input {
+        padding: 1rem 0 1rem 0.75rem;
+        width: 100%;
+    }
+
+    .travel-com {
+        font-size: 0.5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .travel-com .save {
+        font-size: 1rem;
+    }
 }
